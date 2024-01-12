@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "cypress": "^13.6.2",
+    "cypress-mochawesome-reporter": "^3.8.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "scripts": {
+    "nikeTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/nikeTest.cy.js'",
+    "googleSearchChrome": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/googleSearch.cy.js'",
+    "googleSearchFF": "npx cypress run --headed --browser firefox --spec 'cypress/e2e/specs/googleSearch.cy.js'",
+    "googleSearchCB": "npm run googleSearchChrome && npm run googleSearchFF "
+  },
+  "dependencies": {
+    "@cypress/grep": "^4.0.1"
+  }
+}
