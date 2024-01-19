@@ -6,11 +6,15 @@
   },
   "scripts": {
     "nikeTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/nikeTest.cy.js'",
-    "googleSearchChrome": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/googleSearch.cy.js'",
-    "googleSearchFF": "npx cypress run --headed --browser firefox --spec 'cypress/e2e/specs/googleSearch.cy.js'",
-    "googleSearchCB": "npm run googleSearchChrome && npm run googleSearchFF "
+    "bingSearchChrome": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/bingSearch.cy.js'",
+    "bingSearchFF": "npx cypress run --headed --browser firefox --spec 'cypress/e2e/specs/bingSearch.cy.js'",
+    "bingSearchCB": "npm run bingSearchChrome && npm run bingSearchFF ",
+    "uspsChrome": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/USPS.cy.js'",
+    "uspsFF": "npx cypress run --headed --browser firefox --spec 'cypress/e2e/specs/USPS.cy.js'",
+    "uspsCB": "npm run uspsChrome && npm run uspsFF"
   },
   "dependencies": {
-    "@cypress/grep": "^4.0.1"
+    "@cypress/grep": "^4.0.1",
+    "cypress-real-events": "^1.11.0"
   }
 }
