@@ -14,7 +14,7 @@ it('Navigates to bing search and search for NBA and then get the search number f
         const arrayResult = text.split(' ');
         cy.log("Search number for NBA is " + arrayResult[1]);
         cy.task("log","Search number for NBA is " + arrayResult[1])
-    })//end of then
+    })//end of then method
 })//end of it test
 
 
