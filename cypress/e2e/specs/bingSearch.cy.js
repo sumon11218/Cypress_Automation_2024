@@ -3,7 +3,7 @@ it('Navigates to bing search and search for a AUDI car and then get the search n
     cy.visit('https://www.bing.com');
     cy.xpath('//*[@name="q"]',{timeout:7000}).type("AUDI");
     cy.wait(2800)
-    cy.xpath('//*[@id="search_icon"]',{timeout:7000}).click({force_true}); 
+    cy.xpath('//*[@id="search_icon"]',{timeout:7000}).click({force:true}); 
     cy.xpath('//div[@class="sb_count"]',{timeout:7000}).then(($searchResult) => {
         const text = $searchResult.text();
         console.log("Search result for AUDI is " + text)
