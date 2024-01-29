@@ -6,7 +6,7 @@
   },
   "scripts": {
     "nikeTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/nikeTest.cy.js'",
-    "bingSearchChrome": "npx cypress run --browser chrome --spec 'cypress/e2e/specs/bingSearch.cy.js'",
+    "bingSearchChrome": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/bingSearch.cy.js'",
     "bingSearchFF": "npx cypress run --headed --browser firefox --spec 'cypress/e2e/specs/bingSearch.cy.js'",
     "bingSearchCB": "npm run bingSearchChrome && npm run bingSearchFF ",
     "uspsChrome": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/specs/USPS.cy.js'",
