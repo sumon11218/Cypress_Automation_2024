@@ -13,6 +13,12 @@ jobs:
          command: npm run bingSearchChrome
          browser: chrome
 
+      - name: Copy test execution video & screenshots
+        run: |
+              mkdir public
+              cp -r cypress/videos public/videos
+              cp -r cypress/screenshots public/screenshots
+
       - uses: actions/upload-artifact@v3
         with:
            name: cypress-report
